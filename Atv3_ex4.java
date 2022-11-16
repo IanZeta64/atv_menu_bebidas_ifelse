@@ -22,17 +22,17 @@ public class Atv3_ex4 {
     }
 
     private static void imprimirValorBebida(Integer codBebida) {
-        if (codBebida == 1) {
+        if (codBebida.equals(Bebidas.COCA_COLA.getCodigo())) {
             System.out.printf("Voce escolheu a bebida %s. Valor R$%.2f.", Bebidas.COCA_COLA.getNome(), Bebidas.COCA_COLA.getPreco());
-        } else if (codBebida == 2) {
+        } else if (codBebida.equals(Bebidas.COCA_COLA_ZERO.getCodigo())) {
             System.out.printf("Voce escolheu a bebida %s. Valor R$%.2f.", Bebidas.COCA_COLA_ZERO.getNome(), Bebidas.COCA_COLA_ZERO.getPreco());
-        } else if (codBebida == 3) {
+        } else if (codBebida.equals(Bebidas.PEPSI.getCodigo())) {
             System.out.printf("Voce escolheu a bebida %s. Valor R$%.2f.", Bebidas.PEPSI.getNome(), Bebidas.PEPSI.getPreco());
-        } else if (codBebida == 4) {
+        } else if (codBebida.equals(Bebidas.GUARANA_ANTARTICA.getCodigo())) {
             System.out.printf("Voce escolheu a bebida %s. Valor R$%.2f.", Bebidas.GUARANA_ANTARTICA.getNome(), Bebidas.GUARANA_ANTARTICA.getPreco());
-        } else if (codBebida == 5) {
+        } else if (codBebida.equals(Bebidas.FANTA_LARANJA.getCodigo())) {
             System.out.printf("Voce escolheu a bebida %s. Valor R$%.2f.", Bebidas.FANTA_LARANJA.getNome(), Bebidas.FANTA_LARANJA.getPreco());
-        } else if (codBebida == 6) {
+        } else if (codBebida.equals(Bebidas.AGUA.getCodigo())) {
             System.out.printf("Voce escolheu a bebida %s. Valor R$%.2f.", Bebidas.AGUA.getNome(), Bebidas.AGUA.getPreco());
         } else if (codBebida == 0) {
         System.out.println("Voce esta saindo do menu. Obrigado pela preferencia!");
